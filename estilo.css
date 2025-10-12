@@ -33,7 +33,7 @@ body{
     color: #ffff;
     text-decoration: solid;
     font-family: "Bungee", sans-serif;
-    margin-inline-start: 10px;
+    margin-inline-start: 30px;
     border-radius: 10px solid #002a25;
     font-size: 20px;
 }
@@ -43,15 +43,74 @@ body{
     justify-content: center;
     width: 100%;
     margin-top: 20px;
-
 }
 .sobre_mi{
 width: 600px;
+margin-right:30 px;
 }
 .foto_perfil{
     width: 300px;
     height: 300px;
-    border-radius: 50%;
-    object-fit: cover;
+    border-radius: 60%;
+    object-fit: contain;
+    margin: 20px;
+    user-select: none;
+}
+.foto_perfil:focus{
+    outline: none;
+}
+.stacks_titulo{
+    text-align: center;
+    margin-top: 40px;
+    background-color: rgba(1, 7, 3, 0.7);
+}
+.stack_container{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    margin: 40px;
+}
+.stack_container:focus{
+    outline: none;
+}
+.stack_icon{
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+    border: 4px solid #ffc736;
+    border-radius: 70%;
+    border-style:outset;
+}
+.stack_icon:focus{
+    outline: none;
+}
+.stack_icon:hover{
+    filter: drop-shadow(0 0 12px #ffc736);
+    transform: scale(1.3);
+    animation: salto 0.5s;
+}
+.proyectos_titulo{
+    text-align: center;
+    background-color: rgba(1, 7, 3, 0.7);
+}
+.contenedor_proyectos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.proyecto{
+    display: flex;
+    margin: 10px;
+}
 
+
+
+
+@keyframes salto {
+    0%, 100% {transform: translateY(0);}
+    50% {transform: translateY(-15px);}
 }

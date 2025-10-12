@@ -13,13 +13,13 @@
         <h1 class="titulo_header">Bienvenido a mi portfolio</h1> 
     </header>
     <nav class="nav_links">
-            <a class="link" href="#Sobre mi">Sobre mi</a>
-            <a class="link" href="#Proyectos">Proyectos</a>
-            <a class="link" href="#GitHub">GitHub</a>
+            <a class="link" href="#sobre_mi">Sobre mi</a>
+            <a class="link" href="#proyectos">Proyectos</a>
+            <a class="link" href="#github">GitHub</a>
         </nav>
 <main>
     <div class="contenedor_descripcion"> 
-    <p class="sobre_mi">   
+    <p class="sobre_mi" id="sobre_mi">   
         <br>
         Soy estudiante de Ingeniería en Informática, actualmente en segundo año,
         con formación autodidacta en desarrollo <strong>backend</strong>
@@ -34,21 +34,42 @@
         </br>
         <br>
         Actualmente desarrollo proyectos personales para seguir aprendiendo y consolidar mi experiencia, 
-        trabajando con un stack centrado en Python, JavaScript y PostgreSQL. 
+        trabajando con un stack centrado en Python, JavaScript, PostgreSQL, CSS, HTML5, TypeScript. 
         Mi meta es alcanzar un dominio técnico sólido, aplicando buenas prácticas y principios de seguridad 
         en todas las fases del desarrollo de software. Busco crear soluciones que cumplan con los 
         requerimientos funcionales y no funcionales, integrando lógica, trazabilidad y enfoque 
         profesional.
         </br>
     </p>
-    <img class="foto_perfil" src="images/foto.PNG" alt = "Foto de perfil">  
+    <img class="foto_perfil" src="images/foto.PNG" alt="Foto de perfil">  
     </div>
-    <h2 id="experiencia">Proyectos</h2>
-    <ul>
-        <li> Proyecto 1</li>
-        <li> Proyecto 2</li>
-        <li> Proyecto 3</li>
-    </ul>
+    <h2 class="stacks_titulo">STACKS</h2>
+    <div class="stack_container">
+        <img class="stack_icon" src="images/icon/css-icon.png" alt="Icon-css">
+        <img class="stack_icon" src="images/icon/html-icon.png" alt="Icon-html">
+        <img class="stack_icon" src="images/icon/javascript-icon.png" alt="Icon-javascript">
+        <img class="stack_icon" src="images/icon/python-icon.png" alt="Icon-python">
+        <img class="stack_icon" src="images/icon/typescript-icon.png" alt="Icon-typescript">
+        <img class="stack_icon" src="images/icon/postgresql-icon.png" alt="Icon-postgresql">
+    </div>
+    <h2 class="proyectos_titulo" id="proyectos">PROYECTOS</h2>
+    <div class="contenedor_proyectos">
+        <div class="proyecto">
+            <img class="img_proyectos" src="./images/img-proyectos/pronto.webp" alt="Proyecto 1">
+            <h3>Proyecto 1</h3>
+            <p>Descripción</p>
+        </div>
+        <div class="proyecto">
+            <img class="img_proyectos" src="./images/img-proyectos/pronto.webp" alt="Proyecto 2">
+            <h3>Proyecto 2</h3>
+            <p>Descripción</p>
+        </div>
+        <div class="proyecto">
+            <img class="img_proyectos" src="./images/img-proyectos/pronto.webp" alt="Proyecto 2">
+            <h3>Proyecto 3</h3>
+            <p>Descripcion</p>
+        </div>
+    </div>
 </main>    
 </body>
 </html>
