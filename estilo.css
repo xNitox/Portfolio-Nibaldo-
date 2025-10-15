@@ -27,7 +27,7 @@ body{
     position: sticky;
     z-index: 2;
     background-color: rgba(1, 7, 3, 0.7);
-    padding:6px;
+    padding:5px;
 }
 .link{
     color: #ffff;
@@ -52,7 +52,7 @@ margin-right:30 px;
     width: 300px;
     height: 300px;
     border-radius: 60%;
-    object-fit: contain;
+    object-fit:contain;
     margin: 20px;
     user-select: none;
 }
@@ -71,7 +71,8 @@ margin-right:30 px;
     justify-content: center;
     align-items: center;
     user-select: none;
-    margin: 40px;
+    margin-top:30px;
+    margin-bottom: 30px;
 }
 .stack_container:focus{
     outline: none;
@@ -99,18 +100,30 @@ margin-right:30 px;
 .contenedor_proyectos{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    align-items:center;
+    width: 70%;
 }
 .proyecto{
     display: flex;
     margin: 10px;
+    align-self: flex-start;
 }
-
-
-
-
+.img_proyectos{
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    
+    margin: 15px;
+    object-fit: fill;   
+}
+.contenedor_areaTexto{
+    width: 100%;
+    height: 100%;
+}
+.link_proyectos{
+    color: #ffc736;
+}
 @keyframes salto {
-    0%, 100% {transform: translateY(0);}
-    50% {transform: translateY(-15px);}
+    0%, 100% { transform: translateY(0);}
+    50% { transform: translateY(-15px);}
 }
