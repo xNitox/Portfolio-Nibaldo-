@@ -1,10 +1,10 @@
 document.querySelector('form').addEventListener('submit',function(e){e.preventDefault();
 
-const nombre=document.getElementById('name').value;
-const correo=document.getElementById('correo').value;
-const mensaje=document.getElementById('mensaje').value;
+const nombre = document.getElementById('name').value;
+const correo = document.getElementById('correo').value;
+const mensaje = document.getElementById('mensaje').value;
 
-fetch('/contacto',{
+fetch('http://localhost:3000/contacto',{
     method: 'POST',
     headers:{'Content-Type': 'application/json'},
     body: JSON.stringify({nombre, correo, mensaje})
