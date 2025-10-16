@@ -86,7 +86,28 @@
         </div>
     </div>
     <div class="contenedor_contacto" id="contacto">
-        <h2>Contacto</h2>
+        <h2 class="titulo_contacto">CONTACTO</h2>
+        <div class="contenedor_formulario_contacto">
+            <form action="/api-contacto" method="post">
+                <ul>
+                    <li>
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="nombre_usuario"/>
+                    </li>
+                    <li>
+                        <label for="correo">Correo Electronico:</label>
+                        <input type="email" id="correo"  name="correo_electronico"/>
+                    </li>
+                    <li>
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje_usuario" placeholder="Ingrese un mensaje..."></textarea>
+                    </li>
+                    <li class="boton">
+                        <button class="boton_formulario" type="submit">Enviar</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
     </div>
 </main>    
 </body>
