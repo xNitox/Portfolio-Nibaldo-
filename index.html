@@ -73,7 +73,7 @@
             <p>Encriptador creado para el challenge del programa Oracle Next Education 
                 dictado por Alura Latam. 
                 <br>
-                <a class="link_proyectos" href="https://liamencryptor.vercel.app/">
+                <a class="link_proyectos" href="https://liamencryptor.vercel.app/" target="_blank">
                 "Ir a la web".</a> </p>
             </div>
         </div>
@@ -85,22 +85,22 @@
             </div>
         </div>
     </div>
+    <h2 class="titulo_contacto">CONTACTO</h2>
     <div class="contenedor_contacto" id="contacto">
-        <h2 class="titulo_contacto">CONTACTO</h2>
         <div class="contenedor_formulario_contacto">
-            <form action="/api-contacto" method="post">
+            <form action="/contacto" method="post">
                 <ul>
                     <li>
                         <label for="name">Nombre:</label>
-                        <input type="text" id="name" name="nombre_usuario"/>
+                        <input type="text" id="name" name="nombre_usuario" placeholder="Ingrese su nombre" required/>
                     </li>
                     <li>
                         <label for="correo">Correo Electronico:</label>
-                        <input type="email" id="correo"  name="correo_electronico"/>
+                        <input type="email" id="correo"  name="correo_electronico" placeholder="Ingrese su correo electronico" required/>
                     </li>
                     <li>
                         <label for="mensaje">Mensaje:</label>
-                        <textarea id="mensaje" name="mensaje_usuario" placeholder="Ingrese un mensaje..."></textarea>
+                        <textarea id="mensaje" name="mensaje_usuario" placeholder="Ingrese un mensaje..." required></textarea>
                     </li>
                     <li class="boton">
                         <button class="boton_formulario" type="submit">Enviar</button>
@@ -109,6 +109,10 @@
             </form>
         </div>
     </div>
-</main>    
+</main>
+<footer>
+    <p class="footer_autor">© 2025 | Sitio creado por Nibaldo Contreras</p>
+</footer>
+<script src="formulario.js"></script>    
 </body>
 </html>
