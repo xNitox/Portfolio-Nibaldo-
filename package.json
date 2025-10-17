@@ -1,8 +1,0 @@
-{
-  "name": "portfolio",
-  "version": "1.0.0",
-  "description": "Portfolio personal de Nibaldo Contreras",
-  "dependencies": {
-    "nodemailer": "^7.0.9"
-  }
-}
