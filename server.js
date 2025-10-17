@@ -27,10 +27,10 @@ app.post('/contacto', async (req,res) =>{
 
     try {
         await transporter.sendMail(mailOptions);
-        res.json({succes:true});
+        res.json({success:true});
     }catch(error){
         console.error(error);
-        res.status(500).json({succes:false, error:'Error al enviar el correo'});
+        res.status(500).json({success:false, error:'Error al enviar el correo'});
     }
 });
 
