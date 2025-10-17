@@ -4,7 +4,7 @@ const nombre = document.getElementById('name').value;
 const correo = document.getElementById('correo').value;
 const mensaje = document.getElementById('mensaje').value;
 
-fetch('http://localhost:3000/contacto',{
+fetch('/contacto',{
     method: 'POST',
     headers:{'Content-Type': 'application/json'},
     body: JSON.stringify({nombre, correo, mensaje})

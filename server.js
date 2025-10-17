@@ -34,7 +34,10 @@ app.post('/contacto', async (req,res) =>{
     }
 });
 
-const PORT = 3000;
-app.listen(PORT, () => {
+if (process.env.NODE_ENV !=='production'){
+    const PORT = 3000;
+    app.listen(PORT, () => {
     console.log(`Servidor escuchando en http://localhost:${PORT}`);
-})
+    })
+}
+module.exports = app;
