@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 html{
     box-sizing: border-box;
     font-family: "Sarabun", sans-serif;
@@ -9,13 +10,16 @@ body{
     color: #ffff;
     margin: 0;
 }
+a{
+    text-decoration: none;
+}
 
 .titulo_header{
     display: flex;
     justify-content: center;
     color: #ffffff;
-    font-family: "Bungee", sans-serif;
-    font-weight: 30;
+    font-family: "Oswald", sans-serif;
+    font-weight: weight;
     font-style: normal;
     border-bottom: 2px solid  #000000;
     box-shadow: 0 4px 8px -2px #000000;
@@ -48,20 +52,38 @@ body{
     border-radius: 10px solid #002a25;
     font-size: 20px;
 }
+.titulo_sobre_mi{
+    font-size: 23px;
+    height: auto;
+    margin: 3px;
+    margin-top: 30px;
+    font-family: "Oswald", sans-serif;
+}
 .contenedor_descripcion{
     display: flex;
-    align-items:center ;
     justify-content: center;
+    align-items: center;
     width: 100%;
-    margin-top: 20px;
+    height: auto;
+    text-align:justify;
+    font-size: 18px;
+    gap: 20px;
 }
 .sobre_mi{
-width: 600px;
-margin-right:30 px;
+    width: 600px;
+}
+.contenedor_iconos{
+    display: flex;
+    margin-inline: 100px;
+
+}
+.icon{
+    width: 70px;
+    height: 70px;
 }
 .foto_perfil{
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     object-fit:cover;
     margin: 20px;
@@ -72,7 +94,7 @@ margin-right:30 px;
 }
 .stacks_titulo{
     text-align: center;
-    margin-top: 40px;
+    margin-top: 10px;
     background-color: rgba(1, 7, 3, 0.7);
 }
 .stack_container{
@@ -182,17 +204,25 @@ textarea{
     height: 200px;
 }
 .boton_formulario{
-    background-color: #ffc736;
     width: 30%;
     height: 30px;
-    border: 1px solid #ffc736;
-    border-bottom: 2px;
+    border: solid 0.3px;
     border-radius: 5px;
-    box-shadow: 0px 0px 10px 0px #ffff;
     margin-top: 15px;
     margin-bottom: 10px;
-    
+    background-image: linear-gradient(to right, #f8f404 0%, #e2ff3d  51%, #c0cc1e  100%);
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: rgb(0, 0, 0);            
 }
+.boton_formulario:hover{
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+    
 .footer_autor {
     text-align: center;
     color: #ffc736;
@@ -200,6 +230,10 @@ textarea{
     font-family: "Sarabun", sans-serif;
     margin: 12px 0;
     opacity: 0.8;
+}
+.contenedor_iconos_footer{
+    display: flex;
+    justify-content: center;
 }
 @keyframes salto {
     0%, 100% { transform: translateY(0);}
