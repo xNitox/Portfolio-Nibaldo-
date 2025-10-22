@@ -22,12 +22,12 @@
     <div class="contenedor_descripcion" id="sobre_mi">  
         <article class="sobre_mi">
         <h2 class="titulo_sobre_mi" >Desarrollador backend en formación (Ing. Informática, 2.º año)</h2>
-        <p>
+        <p class="parrafo_sobre_mi">
             Soy un desarrollador de software con una gran pasión por el backend. 
             Actualmente, me especializo en la creación de servicios web y APIs REST utilizando TypeScript, 
             Node.js y Express, con un fuerte interés en la arquitectura de sistemas escalables.
         </p>
-        <p>
+        <p class="parrafo_sobre_mi">
             Cuento con un portafolio de proyectos diverso que demuestra mi versatilidad, incluyendo un sistema 
             de gestión en Python y una API REST con seguridad JWT desarrollada en Java y Spring Boot. 
             Esta experiencia me permite adaptarme a diferentes tecnologías y paradigmas de programación, 
@@ -89,18 +89,18 @@
     <div class="contenedor_contacto" id="contacto">
         <div class="contenedor_formulario_contacto">
             <form action="/contacto" method="post">
-                <ul>
+                <ul class="lista-formulario">
                     <li>
                         <label for="name">Nombre:</label>
-                        <input type="text" id="name" name="nombre_usuario" placeholder="Ingrese su nombre" required/>
+                        <input class="input-formulario" type="text" id="name" name="nombre_usuario" placeholder="Ingrese su nombre" required/>
                     </li>
                     <li>
                         <label for="correo">Correo Electronico:</label>
-                        <input type="email" id="correo"  name="correo_electronico" placeholder="Ingrese su correo electronico" required/>
+                        <input class="input-formulario" type="email" id="correo"  name="correo_electronico" placeholder="Ingrese su correo electronico" required/>
                     </li>
                     <li>
                         <label for="mensaje">Mensaje:</label>
-                        <textarea id="mensaje" name="mensaje_usuario" placeholder="Ingrese un mensaje..." required></textarea>
+                        <textarea class="input-formulario" id="mensaje" name="mensaje_usuario" placeholder="Ingrese un mensaje..." required></textarea>
                     </li>
                     <li class="boton">
                         <button class="boton_formulario" type="submit">Enviar</button>
