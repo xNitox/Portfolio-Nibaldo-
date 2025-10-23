@@ -52,6 +52,79 @@ a{
     border-radius: 10px solid #002a25;
     font-size: 20px;
 }
+#container_toggle{
+    background-color: linear-gradient(to right, #16222A 0%, #3A6073  51%, #16222A  100%);
+    position: relative;
+    width: 80px;
+    height: 30px;
+    box-shadow: inset 4px 4px 6px,
+                inset -4px -4px 6px;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-left:40px;
+}
+.toggle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    transform: scale(0.8);
+    background-color: linear-gradient(145deg, #e2ff3d, #002a25);
+    border-radius: 40px;
+    box-shadow: 3px 3px 8px #eee,
+                -3px -3px 8px #eee;
+    transition: left 0.5s ease, box-shadow 0.3s ease;
+}
+.toggle img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+#container_toggle.active .toggle{
+    left: 40px;
+}
+#container_toggle.active{
+    box-shadow: inset 4px 4px 6px rgba(0,0,0,0.2),
+                inset -4px -4px 6px rgba(0,0,0,0.2);
+}
+
+body.active .titulo_header{
+    color: #0d47a1;
+}
+body.active .nav_links{
+    background-image: linear-gradient(to right, #e3f2fd 0%, #90caf9 51%, #e3f2fd 100%);
+}
+body.active .link{
+    color: #0d47a1;
+}
+body.active .stacks_titulo{
+    background-image: linear-gradient(to right, #e3f2fd 0%, #90caf9 51%, #e3f2fd 100%);
+    color: #0d47a1;
+}
+body.active .proyectos_titulo{
+    background-image: linear-gradient(to right, #e3f2fd 0%, #90caf9 51%, #e3f2fd 100%);
+    color: #0d47a1;
+}
+body.active .titulo_contacto{
+    background-image: linear-gradient(to right, #e3f2fd 0%, #90caf9 51%, #e3f2fd 100%);
+    color: #0d47a1;
+}
+body.active .footer_autor{
+    color: #000000;
+}
+body.active .boton_formulario{
+    background-image: linear-gradient(to right, #1976d2 0%, #2196f3 51%, #1976d2 100%);
+    color: #ffffff;
+}
+body.active{
+    background-image: url(/images/fondo/Colors\ Of\ Sky.jpg);
+    color: #000000;
+}
+body.active .toggle {
+box-shadow: 3px 3px 8px #ffc736,
+                -3px -3px 8px #ffc736;
+}
 .titulo_sobre_mi{
     font-size: 23px;
     height: auto;
