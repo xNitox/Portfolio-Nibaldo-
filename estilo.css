@@ -403,6 +403,13 @@ textarea{
     width: 359.59px;
     height: 290px;
 }
+.container_stack_usado{
+    margin-right: 20px;
+}
+.stack_icon{
+    width: 50px;
+    height: 50px;
+}
 }
 @media( max-width: 480px) {
 .nav_links{ 
@@ -450,9 +457,12 @@ textarea{
     flex-wrap: wrap;
     height: auto;
 }
+.container_stack_usado{
+    margin-right: 20px;
+}
 .stack_icon{
     width: 50px;
-    height: auto;
+    height: 50px;
 }
 .proyectos_titulo{
     scroll-margin-top: 100px;
