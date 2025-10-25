@@ -165,9 +165,16 @@ box-shadow: 3px 3px 8px #ffc736,
     outline: none;
 }
 .stacks_titulo{
+    background-image: linear-gradient(to right, #16222A 0%, #3A6073  51%, #16222A  100%);   
     text-align: center;
-    margin-top: 10px;
-    background-color: rgba(1, 7, 3, 0.7);
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: #ffff;            
+}
+.stacks_titulo:hover{
+    background-position: right center;
+    text-decoration: none;
 }
 .stack_container{
     display: flex;
@@ -177,7 +184,7 @@ box-shadow: 3px 3px 8px #ffc736,
     align-items: center;
     user-select: none;
     margin-top:30px;
-    margin-bottom: 30px;
+    margin-bottom: 30px;    
 }
 .stack_container:focus{
     outline: none;
@@ -199,9 +206,18 @@ box-shadow: 3px 3px 8px #ffc736,
     animation: salto 0.5s;
 }
 .proyectos_titulo{
+    background-image: linear-gradient(to right, #16222A 0%, #3A6073  51%, #16222A  100%);   
     text-align: center;
-    background-color: rgba(1, 7, 3, 0.7);
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: #ffff;            
 }
+.proyectos_titulo:hover{
+    background-position: right center;
+    text-decoration: none;
+}
+
 .contenedor_proyectos{
     display: flex;
     flex-direction: column;
@@ -259,8 +275,16 @@ body.active .link_proyectos{
     color: #0d47a1;
 }
 .titulo_contacto{
+    background-image: linear-gradient(to right, #16222A 0%, #3A6073  51%, #16222A  100%);   
     text-align: center;
-    background-color: rgba(1, 7, 3, 0.7);
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: #ffff;            
+}
+.titulo_contacto:hover{
+    background-position: right center;
+    text-decoration: none;
 }
 .contenedor_contacto{
     display: flex;
