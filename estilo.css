@@ -160,6 +160,7 @@ box-shadow: 3px 3px 8px #ffc736,
     object-fit:cover;
     margin: 20px;
     user-select: none;
+    transform: rotate(-3deg);
 }
 .foto_perfil:focus{
     outline: none;
